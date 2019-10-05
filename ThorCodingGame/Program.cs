@@ -34,9 +34,11 @@ class Player
       {
         case 1:
           dir = "S";
+          initialTy++;
           break;
         case -1:
           dir = "N";
+          initialTy--;
           break;
         default:
           dir = "";
@@ -47,9 +49,11 @@ class Player
       {
         case 1:
           dir = dir + "E";
+          initialTx++;
           break;
         case -1:
           dir = dir + "W";
+          initialTx--;
           break;
         default:
           dir = dir + "";
